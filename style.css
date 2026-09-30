@@ -23,12 +23,15 @@ header p { margin: 0; color: var(--muted); font-size: 14px; }
   height: 8px; margin: 16px 0 24px; border-radius: 4px;
   background: repeating-linear-gradient(90deg, var(--red) 0 12px, var(--gold) 12px 16px, var(--red) 16px 28px, #7a1f18 28px 32px);
 }
-nav.lang { display: flex; gap: 8px; margin-bottom: 24px; }
+nav.lang { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 nav.lang a {
   color: var(--cream); text-decoration: none; padding: 6px 14px; border-radius: 8px;
   background: var(--panel); border: 1px solid var(--line); font-weight: 600; font-size: 14px;
 }
 nav.lang a:hover { border-color: var(--gold); }
+nav.lang a.on { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+section[dir="rtl"] ul { padding-left: 0; padding-right: 22px; }
+section[dir="rtl"] th, section[dir="rtl"] td { text-align: right; }
 section { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px 20px; margin-bottom: 24px; }
 h2 { color: var(--gold); font-size: 22px; margin: 16px 0 4px; }
 h3 { color: var(--gold); font-size: 17px; margin: 22px 0 4px; }
